@@ -1,6 +1,6 @@
 Spreadsheet templates with HandsonTable & Vue.
 
-[View on CodeSandbox]](https://codesandbox.io/s/x3y5p4xow)
+[View on CodeSandbox](https://codesandbox.io/s/x3y5p4xow)
 
 (Under construction)
 
