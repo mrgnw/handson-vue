@@ -1,4 +1,4 @@
-Spreadsheet templates with HandsonTable & Vue.
+Spreadsheet templates with HandsonTable & VueJS.
 
 [View on CodeSandbox](https://codesandbox.io/s/x3y5p4xow)
 
@@ -10,9 +10,7 @@ Spreadsheet templates with HandsonTable & Vue.
 Template structure
 
 ```
- [
   { name: 'templateName',
     columns: [{name, validator, nullable, hint, value, locked }]
   }
-]
 ```

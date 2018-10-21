@@ -2,10 +2,10 @@
   <div id="hot-preview">
   <div>
     Select your template.
-    <model-select :options="options"
-    v-model="item"
-    placeholder="select item">
-    </model-select>
+    <model-select :options="templates"
+                                v-model="item"
+                                placeholder="select item">
+         </model-select>
   </div>
 
     <HotTable :settings="settings"></HotTable>
@@ -17,6 +17,18 @@
   import { ModelSelect } from 'vue-search-select'
 
   import Vue from 'vue';
+
+  let templateItem = {
+          value: '',
+          text: ''
+        };
+  let templateList = [
+          { value: '1', text: 'aa' + ' - ' + '1' },
+          { value: '2', text: 'ab' + ' - ' + '2' },
+          { value: '3', text: 'bc' + ' - ' + '3' },
+          { value: '4', text: 'cd' + ' - ' + '4' },
+          { value: '5', text: 'de' + ' - ' + '5' }
+        ];
 
   export default {
     data: function() {
@@ -42,21 +54,13 @@
           fixedRowsTop: 1,
           allowInsertRow: true,
         },
-        options: [
-          { value: '1', text: 'aa' + ' - ' + '1' },
-          { value: '2', text: 'ab' + ' - ' + '2' },
-          { value: '3', text: 'bc' + ' - ' + '3' },
-          { value: '4', text: 'cd' + ' - ' + '4' },
-          { value: '5', text: 'de' + ' - ' + '5' }
-        ],
-        item: {
-          value: '',
-          text: ''
-        },
+        templates: templateList,
+        item: templateItem,
       };
     },
     components: {
-      HotTable
+      HotTable,
+      ModelSelect
     }
   }
 </script>
